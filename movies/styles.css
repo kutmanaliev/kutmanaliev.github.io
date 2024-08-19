@@ -1,0 +1,104 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light cyan background */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.movies-container, .favorites-container {
+    width: 48%;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00796b; /* Teal color for headings */
+}
+
+.movie-list, .favorites-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.movie-list li, .favorites-list li {
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid #80deea; /* Light cyan border */
+    border-radius: 12px; /* Rounded corners */
+    background-color: #ffffff; /* White background for items */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Soft shadow */
+}
+
+.movie-list li img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.favorites-list {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    background-color: #ff5722; /* Bright orange for buttons */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e64a19; /* Darker orange on hover */
+}
+
+button.add-to-favorites {
+    background-color: #4caf50; /* Green for add to favorites */
+}
+
+button.add-to-favorites:hover {
+    background-color: #388e3c; /* Darker green on hover */
+}
+
+button.delete-from-favorites {
+    background-color: #f44336; /* Red for delete from favorites */
+}
+
+button.delete-from-favorites:hover {
+    background-color: #c62828; /* Darker red on hover */
+}
+
+.favorites-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #b2ebf2; /* Light blue border for favorites */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
